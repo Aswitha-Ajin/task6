@@ -1,0 +1,65 @@
+//1.To create Movie class with title,studio,rating
+class Movie{
+ constructor(title,studio,rating){
+    this.title=title;
+    this.studio=studio;
+    this.rating=rating;
+ }
+ 
+ getPG(){
+ return  this.title +  this.studio + this.rating;
+ }
+}
+var film=new Movie("Casino Royale","Eon Productions"," PG13");
+console.log(film.getPG());
+
+//2.class circle to find area,circumference.
+class Circle1{
+constructor(radius){
+this.radius=radius;
+}
+getArea()
+{
+return "Area="+"pi*"+this.radius+"*"+this.radius;
+}
+}
+var c1=new Circle1("r")
+console.log(c1.getArea());
+
+class Circle{
+constructor(radius){
+this.radius=radius;
+}
+getCircumference()
+{
+return "Circumference="+"2pi*"+this.radius;
+}
+}
+var c1=new Circle("r")
+console.log(c1.getCircumference());
+
+//3.Class person with detail
+class Person{
+ constructor(Name,Age,Qualification){
+    this.Name=Name;
+    this.Age=Age;
+    this.Qualification=Qualification;
+}
+}
+var per= new Person("Astha","20","BE",);
+console.log(per)
+
+//4.Uber fare Calculation
+class Uber{
+ constructor(fee,charge){
+    this.fee=fee;
+    this.charge=charge;
+ }
+ 
+ retname(){
+ return "Uber fare Calculation:"+" "+ this.fee+"+"+this.charge;
+ }
+}
+var u1=new Uber("Pickup fee","Trip Charge");
+console.log(u1.retname());
+
